@@ -1,0 +1,83 @@
+/* General body styles */
+body {
+    background: linear-gradient(135deg, #55193c, #d3c6b5); /* Softer gradient for background */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Gradient text for the header */
+.gradient-text {
+    background: linear-gradient(90deg, white, rgb(2, 0, 128), rgb(241, 14, 139));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/* Styling for project rows */
+.project-row {
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Image styles */
+.project-img-container {
+    text-align: center;
+}
+.project-img-container img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for images */
+}
+
+/* Project details section */
+.project-details {
+    padding: 20px;
+}
+.project-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0c0401; /* Complementing orange shade */
+}
+.project-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.gradient-btn {
+    background: linear-gradient(135deg, #55193c, #d3c6b5); /* New gradient for buttons */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+}
+.gradient-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .project-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-details {
+        text-align: center;
+    }
+
+    .project-img-container img {
+        max-width: 100%;
+    }
+}
